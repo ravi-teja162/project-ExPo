@@ -1,0 +1,43 @@
+<% layout('layouts/mainIndex.ejs')-%>
+    <link rel="stylesheet" href="../stylesheets/main-index-styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <body>
+        <div class="panels">
+            <div class="sidepanel" id="leftPanel">
+                <%- include("../partials/uploadCard.ejs")%>
+            </div>
+            <div class="middlepanel">
+
+                <!-- <h2 id="explore">
+                    explore
+                </h2> -->
+
+                <div class="favpics">
+                    <div class="newPost-Button">
+
+                        
+                    </div>
+                </div>
+
+              
+                    <div class="post-loop">
+                        <% let len=posts.length %>
+                            <% for( let i=len-1 ; i>=0 ;i--){ %>
+                                <%- include("../partials/postCard.ejs", {post : posts[i]})%>
+                                    <% } %>
+                                    
+
+                    </div>
+                    
+            </div>
+            <!-- <div class="sidepanel">
+        
+                <!-- <%- include("../partials/userRec.ejs")%> -->
+
+            </div> -->
+        </div>
+        </div>
+        <script src="../javascripts/index.js"></script>
+    </body>

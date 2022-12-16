@@ -1,0 +1,93 @@
+<% layout('layouts/mainIndex.ejs') -%>
+    <link rel="stylesheet" href="../stylesheets/profileStyles.css">
+    <div class="container" id="profile">
+        <div class="profile-cover">
+            <div class="card-details">
+<% if(currentUser.gender == "male"){ %> 
+                <img src="../media/male-profile2.jpg" class="profile-pic" alt="">
+                
+                <% } else if (currentUser.gender == "male"){ %>
+                <img src="../media/f1.jpg" class="profile-pic" alt="">
+
+                 <% } else {%>
+                    <img src="../media/nop.jpg" class="profile-pic" alt="">
+
+                    <% } %>  
+                <div class="details">
+                    <h2>
+                        <%=currentUser.fullName%>
+                    </h2>
+                        <h3 style="font-style:italic;">
+                             <%=currentUser.username%>
+                        </h3>
+                    <p>
+                        <%=currentUser.role%>
+                    </p>
+                    <p>
+                        <%=currentUser.location%>
+                    </p>
+                    <p><span><i class="fa fa-envelope"></i></span>
+                        <%=currentUser.email %>
+                    </p>
+                </div>
+              
+            </div>
+
+            <div class="socials">
+
+                <div class="wrapper">
+                    <a href="instagram.com/<%=currentUser.contact.instagram%>/" class="icon instagram">
+                        <div class="tooltip">Instagram</div>
+                        <span><i class="fab fa-instagram"></i></span>
+                    </a>
+                    <a href="<%=currentUser.contact.github%>" class="icon github">
+                        <div class="tooltip">Github</div>
+                        <span><i class="fab fa-github"></i></span>
+                    </a>
+                    <a href="<%=currentUser.contact.github%>" class="icon linkedin">
+                        <div class="tooltip">LinkedIn</div>
+                        <span><i class="fab fa-linkedin"></i></span>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="profile-panel">
+            <div class="about-card">
+                <h2>about</h2>
+               <p>
+                <%= currentUser.about %>
+               </p>
+            </div>
+
+            <div class="profile-main-div">
+
+                <div class="userPosts">
+                    <p>
+                        Recent Posts
+                    </p>
+                    <% posts.forEach(function(post){%>
+                        <%- include("../partials/postCard.ejs", {post:post})%>
+                            <% }); %>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <h1>
+            <%=user.username%>'s profile
+        </h1>
+
+        <p>Recent Post</p> -->

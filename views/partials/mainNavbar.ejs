@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="../stylesheets/mainNavbarStyles.css">
+
+<header id="head">
+    <nav id="navbar" class="fixed-top" >
+        <div class="nav-links" id="name">
+            <h1 id="title"><a href="/posts"><img id="logo" src="../media/logo1.png" alt=""></h1></a>
+        </div>
+        <div class="nav-links">
+            <ul class="nav-list" id="ref-links">
+                <li class="links">
+                    <a name="projects" class="the-a" href="/posts/projects">
+                        <img src="../media/pr.png" for="projects" class="nav-icons" alt="">
+                        projects
+
+                    </a>
+                </li>
+                <li class="links">
+                    <a name="ideas" class="the-a" href="/posts/ideas">
+                        <img src="../media/idea1.png" for="ideas" class="nav-icons" alt="">
+                        ideas
+                    </a>
+                </li>
+                <li class="links">
+                    <a name="papers" class="the-a" href="/posts/papers">
+                        <img src="../media/paper.png" for="papers" class="nav-icons" alt="">
+                        papers</a>
+                </li>
+                <li class="links">
+                    <a nam="events" class="the-a" href="/posts/events">
+                        <img src="../media/eventnew.png" for="events" class="nav-icons" alt="">
+                        events
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <% if(!currentUser){ %>
+            <div class="nav-links">
+                <!-- <img src="../media/search.png" class="nav-icons" alt=""> -->
+                <ul class="nav-list" id="login-signup">
+                    <li class="links cta" id="login"> <a href="/users/login">login</a></li>
+                    <li class="links" id="signup"> <a href="/users/register">signup</a></li>
+                </ul>
+            </div>
+            <% } else {%>
+                <div class="nav-links">
+                    <!-- <img src="../media/search.png" class="nav-icons" alt=""> -->
+                    <a href="/users/<%= currentUser._id %> "><img src="../media/male-profile2.jpg" id="profile-pic"
+                            class="nav-icons" alt=""></a>
+                    <ul class="nav-list" id="login-signup">
+                        <li class="links" id="logout"> <a href="/users/logout">Logout</a></li>
+                    </ul>
+                </div>
+                <% } %>
+    </nav>
+</header>

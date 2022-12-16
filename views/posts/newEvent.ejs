@@ -1,0 +1,69 @@
+<% layout('layouts/mainIndex.ejs')-%>
+    <link rel="stylesheet" href="../stylesheets/form-styles.css">
+
+    <div class="comi">
+
+        <h2>Event</h2>
+
+        <form action="/posts" method="POST" enctype="multipart/form-data">
+
+            <div class="section-form">
+                <div class="input">
+                    <label for="name">
+                        <input type="text" required name="post[name]"" placeholder="Name your Event" class="input-area">
+                    </label>
+                </div>
+
+                <div class="input">
+                    <label for="password">
+                        <input type="text" required name="post[topic]" placeholder="Topic of your Event" class="input-area">
+                    </label>
+                </div>
+
+            </div>
+            <div class="input section-form">
+                <textarea name="post[caption]" id="" placeholder="Create a caption" class="input-area"></textarea>
+            </div>
+            <div class="input section-form">
+                <textarea name="post[description]" id="" placeholder="Describe your Event" class="input-area"></textarea>
+            </div>
+            <div class="section-form">
+                <div class="input">
+                    <label for="name">
+                        Event Start Date<input type="date" required name="post[startDate]"" placeholder="Name your Event" class="input-area">
+                    </label>
+                </div>
+
+                <div class="input">
+                    <label for="topic">
+                        Event End Date<input type="date" required name="post[endDate]" placeholder="Topic of your Event" class="input-area">
+                    </label>
+                </div>
+
+            </div>  
+            <div class="input section-form">
+
+                <label for="password">
+                    <input type="text" required name="post[regLink]" placeholder="Registration Link" class="input-area">
+                </label>
+            </div>
+            <div class="section-form">
+
+                <div class="">
+                    <label for="images" style="margin:10px">Upload Tumbnail</label><br>
+                    <input type="file" accept="images/*" name="images"><br />
+                </div>
+                <div class="">
+                    <label for="images" style="margin:10px">Choose Images</label><br>
+                    <input type="file" accept="images/*" name="images" multiple><br />
+                </div>
+                </label>
+            </div>
+            <div style="display: none;">
+                <input type="radio" required name="post[typeOf]" value="event" checked="checked">
+            </div>
+
+            <button type="submit" class="input btn-primary">Upload</button>
+        </form>
+
+    </div>

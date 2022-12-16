@@ -1,0 +1,96 @@
+<% layout('layouts/boilerplate')-%>
+    <%- include("../partials/flash-messages.ejs")%>
+        <link rel="stylesheet" href="../stylesheets/login.css">
+        <div class="com" id="signup-p">
+            <div class="con" id="login-info">
+                <form action="" method="POST" id="form-get">
+                    <div class="input">
+                        <label for="fullName">
+                            <input type="text" required name="fullName" placeholder="Full Name"
+                                class="input-area input-2">
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="email">
+                            <input type="text" required name="email" placeholder="E-mail" class="input-area input-2 ">
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="username">
+                            <input type="text" required name="username" placeholder="username"
+                                class="input-area input-2">
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="password">
+                            <input type="password" required name="password" placeholder="Password"
+                                class="input-area input-2">
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="gender">
+                            <input type="radio" name="gender" class="input-area input-2"> <span
+                                style="color: grey;">Male</span>
+                        </label>
+                        <label for="gender">
+                            <input type="radio" name="gender" class="input-area input-2"> <span
+                                style="color: grey;">Female</span>
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="role">
+                            <input type="text" required name="role" placeholder="role" class="input-area input-2">
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="dept">
+                            <input type="text" required name="dept" placeholder="dept" class="input-area input-2">
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="location">
+                            <input type="text" required name="location" placeholder="Location"
+                                class="input-area input-2">
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="about">
+                            <input type="textarea" required name="about" placeholder="about" class="input-area input-2">
+                        </label>
+                    </div>
+                    
+
+            </div>
+            <div class="con " id="login-img">
+
+                <img src="../media/sup.jpg" alt="">
+                <div class="to-make-row">
+                    <div class="input">
+                        <label for="contact[instagram]"><i class="fa-brands fa-instagram"></i>
+                            <input type="text" required name="contact[instagram]" placeholder="instagram"
+                                class="input-area input-2">
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="contact[linkedin]"><i class="fa-brands fa-linkedin"></i>
+                            <input type="url" required name="contact[linkedin]" placeholder="linkedin"
+                                class="input-area input-2">
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="contact[github]"><i class="fa-brands fa-github"></i>
+                            <input type="url" required name="contact[github]" placeholder="github"
+                                class="input-area input-2">
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" id="btn">Sign up</button>
+
+            </div>
+            </form>
+        </div>
+
+        <script src="../javascripts/login.js"></script>
+
+        </html>

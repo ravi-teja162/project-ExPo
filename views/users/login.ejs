@@ -1,0 +1,32 @@
+<% layout('layouts/boilerplate')-%>
+<%- include("../partials/flash-messages.ejs")%>
+<link rel="stylesheet" href="../stylesheets/login.css">
+        <div class="com">
+            <div class="con" id="login-info">
+                
+                <img src="../media/exp.png" alt="" style="width:150px" >
+
+                <form action="" method="POST" id="form-get">
+                    <div class="input">
+                        <label for="name">
+                        <input type="text" required  name="username" placeholder="Username" class="input-area">
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="password">
+                            <input type="password" required name="password" placeholder="Password" class="input-area">
+
+                        </label>
+                    </div>
+                    <button type="submit" id="btn">Login</button>
+                </form>
+            </div>
+            <div class="con" id="login-img">
+                <img src="../media/idea-show.gif" alt="">
+
+                
+                
+            </div>
+        </div>
+
+        

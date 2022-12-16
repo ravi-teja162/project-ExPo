@@ -1,0 +1,73 @@
+<% layout('layouts/mainIndex.ejs')-%>
+    <link rel="stylesheet" href="../../stylesheets/postShowStyles.css">
+
+    <div class="pan">
+        <div class="sidepanel">
+
+        </div>
+
+        <div class="mainPanel">
+            <div class="showTumbnail">
+                <img src="<%=post.tumbnail.url%> " id="post-tumbnail" alt="">
+            </div>
+
+            <div class="blood-card-des-container">
+                <h1 class="blood-card-heading">
+                    <%=post.name%>
+                </h1>
+                <%if(post.typeOf=="event"){ %>
+                    <span>Event by <%=post.author.username%> from <%=post.author.branch%> </span>
+                    <% } %>
+                        <p class="blood-card-caption">
+                            <%=post.caption%>
+                        </p>
+            </div>
+
+            <div class="blood-card-des">
+                <%if(post.typeOf=="event" ){ %>
+                    <p class="blood-card-caption2">
+                        From <%=post.startDate%> to <%=post.endDate%>
+                    </p>
+
+
+                    <p class="blood-card-caption2">
+                        <%=post.topic %>
+                    </p>
+                    <% } %>
+                        <br>
+                        <%=post.description %>
+            </div>
+
+            <% if(post.typeOf=="idea" ){ %>
+                <%=post.startDate%>
+                    <% } %>
+
+                        <div class="blood-card-images">
+                            Images:
+                            <br>
+                            <% post.images.forEach(function(image){ %>
+                                <img src="<%=image.url%>" alt="">
+                                <% }); %>
+                        </div>
+                        <div>
+                            <a href="<%=post.link%>">Registration Link
+                            </a>
+                        </div>
+                        <div class="show-button">
+                            <a href="/posts/<%=post.id%>/edit"><button>Edit</button></a>
+                            <form action="/posts/<%=post.id%>?_method=DELETE" method="POST">
+                                <input type="submit" value="delete">
+                            </form>
+                        </div>
+
+        </div>
+
+        <div class="sidePanel">
+            <% if(post.author){ %>
+                <%- include("../partials/userCard.ejs", { author: post} )%>
+                    <% } %>
+
+
+
+        </div>
+    </div>

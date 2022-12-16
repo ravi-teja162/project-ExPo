@@ -1,0 +1,37 @@
+<% layout('layouts/mainIndex.ejs')-%>
+<link rel="stylesheet" href="../stylesheets/form-styles.css">
+
+    <form action="/posts/<%= post.id %>?_method=PUT" method="POST">
+    <div class="comi">
+
+        <h2>Edit Form</h2>
+
+        <form action="/posts" method="POST" enctype="multipart/form-data">
+
+            <div class="section-form">
+                <div class="input">
+                    <label for="name">
+                        <input type="text" required name="post[name]" value="<%= post.name %> " placeholder=" Project Name" class="input-area">
+                    </label>
+                </div>
+
+                <div class="input">
+                    <label for="password">
+                        <input type="text" required name="post[topic]"  value="<%= post.topic %> " placeholder="Project Topic" class="input-area">
+                    </label>
+                </div>
+
+            </div>
+            <div class="input section-form">
+                <textarea name="post[caption]" value="<%= post.caption%>" id="" placeholder="Caption" class="input-area"></textarea>
+            </div>
+            <div class="input section-form">
+                <textarea name="post[description]" value="<%=post.description%> " id="" placeholder="description" class="input-area"></textarea>
+            </div>
+          
+            
+    </div><button type="submit">submit</button>
+            
+        </form>
+
+    </form>

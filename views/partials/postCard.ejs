@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="../../stylesheets/postCardStyles.css">
+<div id="post">
+    <% if(post.typeOf=="idea" ){ %>
+        <div class="post-typetype">
+            <span class="post-text post-type">
+                <img src="../media/idea16.jpeg" class="post-icon" alt="">
+                <span><%=post.typeOf%></span>
+            </span>
+        </div>
+        <% } else if(post.typeOf=="event" ){ %>
+            <div class="post-typetype">
+                <span class="post-text post-type">
+                    <img src="../media/event1.png" class="post-icon" alt="">
+                    <span><%=post.typeOf%></span>
+                </span>
+            </div>
+            <% } else if(post.typeOf=="paper" ){ %>
+                <div class="post-typetype">
+                    <span class="post-text post-type">
+                        <img src="../media/paper.png" class="post-icon" alt="">
+                        <span><%=post.typeOf%></span>
+                    </span>
+                </div>
+                <% } else if(post.typeOf=="project" ){ %>
+                    <div class="post-typetype">
+                        <span class="post-text post-type">
+                            <img src="../media/project.png" class="post-icon" alt="">
+                            <span><%=post.typeOf%></span>
+                        </span>
+                    </div>
+                    <% } %>
+                        <% if(post.tumbnail){ %>
+                            <div class="tumbnail-image">
+                                <img src="<%=post.tumbnail.url%>" id="post-tumbnail">
+                            </div>
+                            <%} %>
+
+                                <div class="bottom">
+                                    <div class="title">
+                                        <h1 id="post-title">
+                                            <%= post.name %>
+                                        </h1> 
+                                    </div>
+                                    <div class="post-text">
+                                        <p id="post-caption">
+                                            <%=post.caption%>
+                                        </p>
+                                    </div>
+                                    <% if(post.author){ %> 
+                                    <div class="post-text by">
+                                        <span><%= post.status %> <%=post.typeOf %> by 
+                                            <a href="/users/<%=post.author._id%>">
+                                                <%=post.author.username%>
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <% } else {%>
+                                        <div class="post-text by">
+                                            <span><%= post.status %> <%=post.typeOf %> by 
+                                                    Deleted User
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <% } %>  
+                                    <% if(currentUser){ %>
+                                        <div class="post-text by">
+                                            <span>
+                                                <a href="/posts/<%=post._id%>">view more</a>
+                                            </span>
+                                        </div>
+                                        <% } else {%>
+                                            <div class="post-text by">
+                                                <span>
+                                                    <a href="/users/login">View more</a>
+                                                </span>
+                                            </div>
+                                            <% } %>
+                                </div>
+</div>

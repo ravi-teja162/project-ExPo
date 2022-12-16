@@ -1,0 +1,347 @@
+<% layout('layouts/boilerplate')-%>
+    <style>
+        /* Default styles */
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .sub {
+            height: 60vh;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+
+
+        }
+
+        #about {
+            margin-top: 50px;
+            color: #fff;
+            text-align: left;
+            padding-top: 150px;
+            font-size: 40px;
+            padding-left: 20%;
+            text-decoration: underline;
+
+
+        }
+
+        .about-us {
+            width: 90%;
+            margin: auto;
+            padding-top: 80px;
+            padding-bottom: 50px;
+
+        }
+
+        .row {
+            display: flex;
+            padding: 5px;
+            left: 20%;
+
+        }
+
+        .column img {
+            width: 80%;
+
+        }
+
+        .column h1 {
+            padding-top: 0;
+        }
+
+        .column p {
+            padding: 15px 0 25px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 33.33%;
+            padding:5px;
+            margin: 5px;
+
+        }
+
+        .wrapper2 h1 {
+            text-align: center;
+            font-size: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-decoration: underline;
+        }
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .picture {
+            padding: 0 20px 20px;
+            display: flex;
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .picture img {
+            height: 180px;
+            width: 180px;
+            margin-bottom: 10px;
+        }
+        .picture p{
+            padding: 3px;
+        }
+        .wrapper2 h2{
+            padding: 2px;
+        }
+        
+        
+    </style>
+
+<body>
+    <section class="sub" style='background: linear-gradient(180.43deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.80) 100%),
+     url(https://visme.co/blog/wp-content/uploads/simple-backgrounds-wide-header.jpg); background-repeat: no-repeat; background-size: cover;'>
+        <h1 id="about">About Us</h1>
+    </section>
+    <div
+        style="background-color: rgb(236, 164, 164); height: 370px; margin-top: 50px; margin-left: 10%; margin-right: 10%;">
+        <section class="about-us">
+            <div class="row">
+                <div class="column">
+                    <h1> About our EXPO</h1>
+                    <p>ProjectsExPo WANTS TO BE SIMPLE AND SIGNIFICANT is an initiative to help the upcoming engineers. ProjectExPo focuses on providing the most efficient projects as easy as we see a post in in the instagram. We will help students to create their projects in different ways of thinking.
+                    </p>
+                    <a href="Contact us"></a>
+                </div>
+                <div class="column">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyMjKGw374-lhoDklBZfwLLRG-J3GOJeApibgg0xaSsr0ah_M_H9r27pTKXRPXaYK3las&usqp=CAU"
+                        alt="image">
+                </div>
+            </div>
+
+
+
+        </section>
+    </div>
+    <div
+        style="background-color: rgb(145, 212, 132); height: 370px; margin-top: 50px; margin-left: 10%; margin-right: 10%;">
+        <section class="about-us">
+            <div class="row">
+
+                <div class="column">
+                    <img src="https://images.unsplash.com/photo-1623479322729-28b25c16b011?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGNvZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="image">
+                </div>
+                <div class="column">
+                    <h1> Software Engineering Project</h1>
+                    <p>
+                        Project ExPo is a project for software engineering Lab under the guidence of Ms. P Sindhu 
+                    </p>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="wrapper2" >
+        <h1>Meet the team</h1>
+        <div class="team">
+            <div class="picture">
+                <img src="https://images.unsplash.com/photo-1532170579297-281918c8ae72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3wyMTM1OTR8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+
+                <p>
+                    Trilakshmi
+                </p>
+                <p>
+                    Coder
+                </p>
+            </div>
+            <div class="picture">
+                <img src="https://images.unsplash.com/photo-1532170579297-281918c8ae72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3wyMTM1OTR8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+
+                <p>
+                    Poojitha
+                </p>
+                <p>
+                    Coder
+                </p>
+            </div>
+            <div class="picture">
+                <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3x4Z2Q1VTdRMmtyTXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                <p>
+                    RaviTeja
+                </p>
+                <p>
+                    Team Lead
+                </p>
+
+            </div>
+            <div class="picture">
+                <img src="https://images.unsplash.com/photo-1532170579297-281918c8ae72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3wyMTM1OTR8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+              
+                <p>
+                    Haneesha
+                </p>
+                <p>
+                    Document editor
+                </p>
+            </div>
+            <div class="picture">
+                <img src="https://images.unsplash.com/photo-1532170579297-281918c8ae72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3wyMTM1OTR8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                <p>
+                    Sravya
+                </p>
+                <p>
+                    Document editor
+                </p>
+            </div>
+        </div>
+    </div>
+</body>

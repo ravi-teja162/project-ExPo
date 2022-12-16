@@ -1,0 +1,66 @@
+<% layout('layouts/mainIndex.ejs')-%>
+    <link rel="stylesheet" href="../stylesheets/form-styles.css">
+
+    <div class="comi">
+
+        <h2>Paper</h2>
+
+        <form action="/posts" method="POST" enctype="multipart/form-data">
+
+            <div class="section-form">
+                <div class="input">
+                    <label for="name">
+                        <input type="text" required name="post[name]"" placeholder="Name your Paper" class="input-area">
+                    </label>
+                </div>
+
+                <div class="input">
+                    <label for="password">
+                        <input type="text" required name="post[topic]" placeholder="Topic of your Paper" class="input-area">
+                    </label>
+                </div>
+
+            </div>
+            <div class="input section-form">
+                <textarea name="post[caption]" id="" placeholder="Create a caption" class="input-area"></textarea>
+            </div>
+            <div class="input section-form">
+                <textarea name="post[description]" id="" placeholder="Describe your Paper" class="input-area"></textarea>
+            </div>
+            <div class="input section-form">
+                <label for="password">Improved</label>
+                <input type="radio" required name="post[status]"  class="input-area">
+
+
+                <label for="password">New Paper</label>
+                <input type="radio" required name="post[status]" class="input-area">
+
+                <label for="password"Paper your Paper">solution</label>
+                <input type="radio" required name="post[status]" class="input-area">
+
+            </div>
+            <div class="input section-form">
+
+                <label for="password">
+                    <input type="text" required name="post[link]" placeholder="Reference Link" class="input-area">
+                </label>
+            </div>
+            <div class="section-form">
+
+                <div class="">
+                    <label for="images" style="margin:10px">Upload Tumbnail</label><br>
+                    <input type="file" accept="images/*" name="images"><br />
+                </div>
+                <div class="">
+                    <label for="images" style="margin:10px">Choose Images</label><br>
+                    <input type="file" accept="images/*" name="images" multiple><br />
+                </div>
+                </label>
+            </div>
+            <div style="display: none;">
+                <input type="radio" required name="post[typeOf]" value="paper" checked="checked">
+            </div>
+            <button type="submit" class="input btn-primary">Upload</button>
+        </form>
+
+    </div>

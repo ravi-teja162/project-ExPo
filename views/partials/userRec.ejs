@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../stylesheets/uploadCardStyles.css">
+
+
+
+<div class="cor">
+    <div>
+        <h2>Explore Users</h2>
+    </div>
+    <div class="user">
+        <% for(i=0;i<5;i++){ %>
+            <div>
+                <form action="/users/<%=users[i]._id%>">
+                    <button class="user-button">
+                        <%=users[i].username %>
+                            <span>
+                                <%=users[i].role%>
+                            </span>
+                    </button>
+                </form>
+            </div>
+            <% } %>
+
+
+    </div>
+</div>
