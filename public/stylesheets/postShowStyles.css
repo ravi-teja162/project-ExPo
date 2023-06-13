@@ -1,0 +1,233 @@
+/* Default styles */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+@font-face {
+    font-family: "Pangram-Regular";
+    src: url("/fonts/Pangram-Regular.otf");
+}
+
+#post-tumbnail {
+    width: 40vw;
+}
+
+.showTumbnail {
+    display: flex;
+    justify-content: center;
+}
+
+.mainPanel {
+    width: 70vw;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+
+.sidePanel {
+    width: 30vw;
+}
+
+.blood-card-images img {
+    width: 100px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.pan {
+    width: 100vw;
+    display: flex;
+    font-family: "Pangram-Regular";
+
+
+}
+
+.mainPanel {
+    width: 70vw;
+    padding: 5vh 5vw;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.424);
+}
+
+.sidePanel {
+    
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(213, 226, 113, 0.922);
+    padding: 10px 0;
+    top: 50%;
+    right: 0;
+
+}
+
+.blood-card-heading {
+    font-size: 40px;
+    margin: 30px;
+}
+
+.blood-card-caption {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-style: italic;
+    background-color: rgba(171, 179, 176, 0.595);
+    font-size: 20px;
+}
+
+.blood-card-des {
+    padding: 20px;
+    font-size: 18px;
+
+}
+
+.blood-card-des-container {}
+
+.show-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blood-card-caption2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-style: italic;
+    background-color: rgba(254, 254, 254, 0.595);
+    font-size: 20px;
+}

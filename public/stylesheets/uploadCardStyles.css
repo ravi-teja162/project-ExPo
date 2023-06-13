@@ -1,0 +1,54 @@
+  
+
+
+.cor{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(158, 221, 162, 0.478);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  
+  .post-butt{
+    width: 30vw;
+    height: 10vh;
+    border: 0;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: all 500ms ease-in-out;
+}
+.user-button{
+    width: 23vw;
+    height: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+  
+
+
+.post-butt:hover {
+
+    background-image: url("../media/type.gif");
+    background-repeat: no-repeat;
+    background-position: 200px ;
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+.imagesss{
+    width: auto;
+    height: inherit;
+}

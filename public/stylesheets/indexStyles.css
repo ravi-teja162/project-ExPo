@@ -1,0 +1,206 @@
+/* Default styles */
+ @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap'); 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.home{
+  display: flex;
+  height: auto;
+  justify-content: space-around;
+
+  /* background-color: black; */
+}
+#projects{
+  display: flex;
+  height: auto;
+  justify-content: space-around;
+
+}
+#intro{
+  height: 100vh;
+  background-image: url("/media/search.gif");
+  background-position: 160px;
+  background-position-y: -50px;
+}
+#introTab1{
+  position:relative;
+  top: 65%;
+  left:5%;
+  width: 40vw;
+  height: 40vh;
+  padding:10px;
+  /* background-color: azure; */
+
+}
+.tab{
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.butt{
+  border: 0.5px solid rgba(128, 128, 128, 0.405);
+  width: 20vw;
+  height: 8vh;
+  padding:  5px 15px;
+  padding: 5px 10px ;
+  background-color: rgba(208, 184, 153, 0.405);
+  border: 0;
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 40px;
+
+  font-size: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.butt:hover{
+  background-color: rgba(156, 208, 153, 0.405);
+
+
+}
+
+.text-in-the{
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 60px;
+}
+.text-in-the2{
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 30px;
+}
+
+#projects{
+  background-color: azure;
+}

@@ -1,0 +1,20 @@
+.shadow{
+    position: fixed;
+}
+.user-card{
+
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px;
+    background-color:white
+    
+}
+.user-card h4{
+    display: flex;
+    justify-content: center;
+}
+.profile-name{
+
+}
